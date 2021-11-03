@@ -1,14 +1,10 @@
 import React from "react";
-import { useHistory,Route } from "react-router";
-import Levels from "../Levels";
-const InstructionPage = () => {
-  const history=useHistory();
-  
-  const routeToLevels=()=>{
-    history.push("/Levels");
-  }
+import { Link } from "react-router-dom";
+import { useHistory } from "react-router";
+const Instruction = () => {
   return (
     <div>
+        <div className="menuWrapper">
       <h1>InstructionPage</h1>
       <p>
         The game of memory involves selecting two squares from a group of
@@ -25,9 +21,13 @@ const InstructionPage = () => {
           Game ends when all matches occur or time finish. (n / 2) matches
         </li>
       </ul>
-        <button onClick={routeToLevels}>Next </button>
-    </div>
+      <div className="menuButtons">
+      <button>
+        <Link to="/gamelevel">Next</Link>
+      </button>
+      </div>
+    </div></div>
   );
 };
 
-export default InstructionPage;
+export default Instruction;
