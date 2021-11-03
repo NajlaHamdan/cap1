@@ -5,7 +5,7 @@ const Instruction = () => {
   return (
     <div>
         <div className="menuWrapper">
-      <h1>InstructionPage</h1>
+      <h1>Instructions</h1>
       <p>
         The game of memory involves selecting two squares from a group of
         squares in attempt to find a match. These are a few details we can plan
