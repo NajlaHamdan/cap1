@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Instruction from "../Instruction";
 import "./style.css";
 
 const Menu = () => {
@@ -10,12 +9,8 @@ const Menu = () => {
         <h1>Flip Card</h1>
       </div>
       <div className="menuButtons">
-        <button>
-          <Link to="/gamelevel">START</Link>
-        </button>
-        <button>
-          <Link to="/instruction">instruction</Link>
-        </button>
+        <button><Link to="/gamelevel">START</Link></button>
+        <button><Link to="/instructions">INSTRACTIONS</Link></button>
       </div>
     </div>
   );

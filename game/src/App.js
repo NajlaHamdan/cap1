@@ -1,8 +1,12 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Menu from "./components/Menu";
-import Instruction from "./components/Instruction";
+import Instructions from "./components/Instructions";
 import Levels from "./components/Levels";
+import Easy from "./components/Easy";
+import Normal from "./components/Normal";
+import Hard from "./components/Hard";
+import FinishMenu from "./components/FinishMenu";
 import "./App.css";
 
 const App = () => {
@@ -10,12 +14,12 @@ const App = () => {
     <>
       <Switch>
         <Route exact path="/" component={Menu} />
-        <Route exact path="/Instruction" component={Instruction} />
+        <Route exact path="/instructions" component={Instructions} />
         <Route exact path="/gamelevel" component={Levels} />
-        {/* <Route exact path="/gameeasy" component={} /> */}
-        {/* <Route exact path="/gamenormal" component={} /> */}
-        {/* <Route exact path="/gamehard" component={} /> */}
-        {/* <Route exact path="/finishmenu" component={} /> */}
+        <Route exact path="/easy" component={Easy} />
+        <Route exact path="/gamenormal" component={Normal} />
+        <Route exact path="/gamehard" component={Hard} />
+        <Route exact path="/finishmenu" component={FinishMenu} />
         {/* <Route exact path="*" component={NotFound} /> */}
       </Switch>
     </>

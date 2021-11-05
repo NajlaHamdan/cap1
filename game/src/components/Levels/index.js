@@ -1,18 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./style.css";
 
 const Levels = () => {
   return (
-    <div>
+    <>
       <div className="menuWrapper">
         <div className="menuTitle">
           <div className="menuButtons">
-            <button>Easy</button>
-            <button>Intermediate</button>
-            <button>Hard</button>
+            <button><Link to="/Easy">Easy</Link></button>
+            <button><Link to="/gamenormal">Intermediate</Link></button>
+            <button><Link to="/gamehard">Hard</Link></button>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
