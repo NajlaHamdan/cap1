@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './style.css'
 const index = () => {
     return (
@@ -6,7 +7,7 @@ const index = () => {
             <div className="menuWrapper">
         <div className="menuTitle">
             <h1>Game Over</h1>
-            {/* <h1>{score}</h1> */}
+            <button><Link to="/gamelevel">Restart</Link></button>
         </div>
         </div></div>
     )

@@ -7,6 +7,7 @@ import Easy from "./components/Easy";
 import Normal from "./components/Normal";
 import Hard from "./components/Hard";
 import FinishMenu from "./components/FinishMenu";
+import NotFound  from "./components/NotFound";
 import "./App.css";
 
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
         <Route exact path="/gamenormal" component={Normal} />
         <Route exact path="/gamehard" component={Hard} />
         <Route exact path="/finishmenu" component={FinishMenu} />
-        {/* <Route exact path="*" component={NotFound} /> */}
+        <Route exact path="*" component={NotFound} />
       </Switch>
     </>
   );

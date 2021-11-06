@@ -24,7 +24,7 @@ const Instructions = () => {
         </ul>
         <div className="menuButtons">
           <button>
-            <Link to="/gamelevel">Next</Link>
+            <Link to="/">Next</Link>
           </button>
         </div>
       </div>
