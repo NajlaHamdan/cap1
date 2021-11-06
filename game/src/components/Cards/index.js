@@ -6,14 +6,14 @@ const Cards = ({ card, clickHandel, disableClick, level }) => {
   let classImg;
 
   if (card.matched) {
-    classCard = "flip-card-inner flipped";
-    classImg = "flip-card-back opicty";
+    classCard = "flip-card-inner flipped";//disable the front of the image
+    classImg = "flip-card-back opicty";//disapled
   } else if (card.flipped) {
-    classCard = "flip-card-inner flipped";
-    classImg = "flip-card-back";
+    classCard = "flip-card-inner flipped";//display the front of the image
+    classImg = "flip-card-back";//resize the image when it is flipped
   } else {
     classCard = "flip-card-inner";
-    classImg = "flip-card-back";
+    classImg = "flip-card-back";//normal flip
   }
 
   const cardHandel = () => {

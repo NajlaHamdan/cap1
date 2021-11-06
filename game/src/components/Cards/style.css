@@ -65,13 +65,16 @@
 
 @media screen and (max-width: 1300px) {
   .easy {
-    width: 10rem;
-    height: 15rem;
+    width: 7rem;
+    height: 10rem;
   }
-
+  .normal{
+    width: 7rem;
+    height: 9rem;
+  }
   .hard {
-    width: 7.5rem;
-    height: 11rem;
+    width: 7rem;
+    height: 7rem;
   }
 }
 
