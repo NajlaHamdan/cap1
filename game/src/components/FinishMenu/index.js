@@ -1,16 +1,40 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './style.css'
-const index = () => {
-    return (
-        <div>
-            <div className="menuWrapper">
-        <div className="menuTitle">
-            <h1>Game Over</h1>
-            <button><Link to="/gamelevel">Restart</Link></button>
-        </div>
-        </div></div>
-    )
-}
+import React from "react";
+import { Link, useParams } from "react-router-dom";
+import "./style.css";
 
-export default index
+const FinishMenu = () => {
+  const { status,turns, score } = useParams();
+  return (
+    <div>
+      <div className="finishMenuWrapper">
+        <div className="finishMenu">
+          <div className="finishMenuStatus">
+            <h1>{status}</h1>
+          </div>
+          <div className="finishMenuScore">
+            <h1>SCORE:</h1>
+            <h1>{score}</h1>
+          </div>
+          <div className="finishMenuScore">
+            <h1>TURNS:</h1>
+            <h1>{turns}</h1>
+          </div>
+          <div className="finishMenuButtons">
+            <button>
+              <Link to="/levels" className="finishMenuButton">
+                RESTART THE GAME
+              </Link>
+            </button>
+            <button>
+              <Link to="/" className="finishMenuButton">
+                BACK TO MENU
+              </Link>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FinishMenu;

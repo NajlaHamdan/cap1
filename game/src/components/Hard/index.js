@@ -1,28 +1,25 @@
 import React from "react";
 import Game from "../Game";
-import "./style.css";
 
 const Hard = () => {
-    const hardArray = [
-        { name: "pic1", image: "./img/p1.jpeg", matched: false, flipped: false },
-        { name: "pic2", image: "./img/p2.jpeg", matched: false, flipped: false },
-        { name: "pic3", image: "./img/p3.jpeg", matched: false, flipped: false },
-        { name: "pic4", image: "./img/p4.jpeg", matched: false, flipped: false },
-        { name: "pic5", image: "./img/p5.jpeg", matched: false, flipped: false },
-        { name: "pic6", image: "./img/p6.jpeg", matched: false, flipped: false },
-        { name: "pic4", image: "./img/p7.jpeg", matched: false, flipped: false },
-        { name: "pic5", image: "./img/p8.jpeg", matched: false, flipped: false },
-        { name: "pic6", image: "./img/p9.jpeg", matched: false, flipped: false },
-        { name: "pic6", image: "./img/p10.jpeg", matched: false, flipped: false },
-      ];
-        
-     return (
-       <div className="easyWrapper">
-        <div className="easyGrid">
-         <Game cards={hardArray}/>;
-          </div>
-            </div>
-          );
-        };
+  const hardArray = [
+    { name: "Dalmatian", image: "./img/Dalmatian.jpg", matched: false, flipped: false },
+    { name: "Mickey", image: "./img/Mickey.jpg", matched: false, flipped: false },
+    { name: "Winnie", image: "./img/Winnie.jpg", matched: false, flipped: false },
+    { name: "Goofy", image: "./img/Goofy.jpg", matched: false, flipped: false },
+    { name: "Alice", image: "./img/Alice.jpg", matched: false, flipped: false },
+    { name: "Stitch", image: "./img/Stitch.jpg", matched: false, flipped: false },
+    { name: "Lightning", image: "./img/Lightning.jpg", matched: false, flipped: false },
+    { name: "Minnie", image: "./img/Minnie.jpg", matched: false, flipped: false },
+    { name: "Peter Pan", image: "./img/Peter Pan.jpg", matched: false, flipped: false },
+    { name: "Woody", image: "./img/Woody.jpg", matched: false, flipped: false },
+  ];
+
+  return (
+    <div className="gameWrapper">
+      <Game cards={hardArray} gridName={"hardGrid"} level={'hard'} time={60}/>
+    </div>
+  );
+};
 
 export default Hard;

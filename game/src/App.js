@@ -7,7 +7,7 @@ import Easy from "./components/Easy";
 import Normal from "./components/Normal";
 import Hard from "./components/Hard";
 import FinishMenu from "./components/FinishMenu";
-import NotFound  from "./components/NotFound";
+import NotFound from "./components/NotFound";
 import "./App.css";
 
 const App = () => {
@@ -16,11 +16,11 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Menu} />
         <Route exact path="/instructions" component={Instructions} />
-        <Route exact path="/gamelevel" component={Levels} />
+        <Route exact path="/levels" component={Levels} />
         <Route exact path="/easy" component={Easy} />
-        <Route exact path="/gamenormal" component={Normal} />
-        <Route exact path="/gamehard" component={Hard} />
-        <Route exact path="/finishmenu" component={FinishMenu} />
+        <Route exact path="/normal" component={Normal} />
+        <Route exact path="/hard" component={Hard} />
+        <Route exact path="/finishmenu/:status/:turns/:score" component={FinishMenu} />
         <Route exact path="*" component={NotFound} />
       </Switch>
     </>
